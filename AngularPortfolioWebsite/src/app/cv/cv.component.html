@@ -1,1 +1,119 @@
-<p>cv works!</p>
+<div class="container text-center">
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF CV</button>
+
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkExperienceOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100"accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Work Experience</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
+                        <div *ngIf="isWorkExperienceOpen" style="color: white;">v</div>
+                    </div>
+                </button>
+
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Software Developer</h2>
+                    <h3 class="text-primary">Sample Company</h3>
+                    <ul>
+                        <li>Example 1</li>
+                        <li> Example 2</li>
+                        <li>Example 3</li>
+                        <li> Example 4</li>
+                        <li> Example 5</li>
+                        <li> Example 6</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Software Developer2</h2>
+                    <h3 class="text-primary">Sample Company2</h3>
+                    <ul>
+                        <li>Example 1</li>
+                        <li> Example 2</li>
+                        <li>Example 3</li>
+                        <li> Example 4</li>
+                        <li> Example 5</li>
+                        <li> Example 6</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Software Developer3</h2>
+                    <h3 class="text-primary">Sample Company3</h3>
+                    <ul>
+                        <li>Example 1</li>
+                        <li> Example 2</li>
+                        <li>Example 3</li>
+                        <li> Example 4</li>
+                        <li> Example 5</li>
+                        <li> Example 6</li>
+                    </ul>
+                </div>
+            </accordion-group>
+    
+            <accordion-group [(isOpen)]="isSkillsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100"accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Technical Skills</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isSkillsOpen" style="color: white;">></div>
+                        <div *ngIf="isSkillsOpen" style="color: white;">v</div>
+                    </div>
+                </button>
+                <div class="row" style="text-align: left;">
+                    <div class="col">
+                        <h3>Programming Languages:</h3>
+                        <ul>
+                            <li>Example 1</li>
+                            <li> Example 2</li>
+                            <li>Example 3</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Frameworks:</h3>
+                        <ul>
+                            <li>Example 1</li>
+                            <li> Example 2</li>
+                            <li>Example 3</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Other Skills:</h3>
+                        <ul>
+                            <li>Example 1</li>
+                            <li> Example 2</li>
+                            <li>Example 3</li>
+                        </ul>
+                    </div>
+                </div>
+    
+            </accordion-group>
+    
+            <accordion-group [(isOpen)]="isEducationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100"accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Education</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isEducationOpen" style="color: white;">></div>
+                        <div *ngIf="isEducationOpen" style="color: white;">v</div>
+                    </div>
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Software Developer Education</h2>
+                    <h3 class="text-primary">Sample Company Education</h3>
+                    <ul>
+                        <li>Example 1</li>
+                        <li> Example 2</li>
+                        <li>Example 3</li>
+                    </ul>
+                </div>
+    
+            </accordion-group>
+        </accordion>
+    </div>
+</div>
