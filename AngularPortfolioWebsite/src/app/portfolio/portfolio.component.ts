@@ -22,6 +22,7 @@ export class PortfolioComponent implements OnInit{
   reactnative: boolean = false;
   firebase: boolean = false;
   postgres: boolean = false;
+  sql: boolean = false;
   filtering: boolean = false;
 
 
@@ -59,8 +60,11 @@ export class PortfolioComponent implements OnInit{
     if (this.postgres) {
       filterTags.push(Tag.POSTGRES);
     }
+    if (this.sql) {
+      filterTags.push(Tag.SQL);
+    }
 
-    if(this.typescript || this.javascript || this.angular || this.react || this.reactnative || this.nodejs || this.firebase || this.postgres){
+    if(this.typescript || this.javascript || this.angular || this.react || this.reactnative || this.nodejs || this.firebase || this.postgres || this.sql){
       this.filtering = true;
     }
     else {
@@ -79,6 +83,7 @@ export class PortfolioComponent implements OnInit{
     this.angular = false;
     this.firebase = false;
     this.postgres = false;
+    this.sql = false;
     this.filtering = false;
 
     this.projects = this.projectService.GetProjects();
