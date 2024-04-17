@@ -15,4 +15,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Hosted site
 
-This portfolio page has been hosted using Netlify, and can be viewed via the following link: `https://benmccarrickportfolio.netlify.app/`
+This portfolio page has been hosted using Netlify, and can be viewed via the following link: https://benmccarrickportfolio.netlify.app/
