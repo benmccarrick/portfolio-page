@@ -1,0 +1,8 @@
+.aboutmepic {
+    border-radius: 8px;
+}
+
+.container {
+    background-image: linear-gradient(to bottom right, red, rgb(206, 206, 42));
+    color: rgb(255, 255, 255);
+}
