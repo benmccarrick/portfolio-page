@@ -93,6 +93,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/angular-portfolio-website",
+            "netlifyToken": "nfp_bh3ipoLMGQ8wgjRK2rTAhB4o5uKX815L77e1",
+            "siteId": "c6cf566e-47b5-40ba-ad0b-61df0f2eb376"
+          }
         }
       }
     }
