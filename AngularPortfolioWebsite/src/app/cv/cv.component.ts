@@ -19,8 +19,8 @@ export class CvComponent {
   DownloadFile() {
     const link = this.renderer.createElement('a');
     link.setAttribute('target', '_blank');
-    link.setAttribute('href', '../../assets/B McCarrick CV.pdf');
-    link.setAttribute('download', 'B McCarrick CV.pdf');
+    link.setAttribute('href', '../../assets/Ben McCarrick CV.pdf');
+    link.setAttribute('download', 'Ben McCarrick CV.pdf');
     link.click();
     link.remove();
   }
